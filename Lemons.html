@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: sans-serif;
+        overflow-y: auto;
+      }
+
+      /* Background image wrapper */
+      .background-image {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: url('https://assets.bonappetit.com/photos/65d8e8cdac1363495746a07a/16:9/w_2560%2Cc_limit/GettyImages-1164354567%2520copy.jpg') center/cover no-repeat;
+        transform: translateX(-0%);
+        z-index: -1; /* Added to fix layering issue */
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        height: 100vh;
+        box-sizing: border-box;
+        position: relative;
+        z-index: 1;
+      }
+
+      h1 {
+        font-size: 160px;
+        margin: 20px 0 40px;
+        color: white;
+        text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+        text-align: center;
+        transform: translateX(2%);
+      }
+
+    ol { font-size: 115%; font-weight: 700; text-align: center; max-width: 900px;
+      background: rgba(255,255,255,0.92); padding: 28px 32px; border-radius: 10px;
+      color: #2e2e2e; list-style-position: inside; box-shadow: 0 6px 18px rgba(34,34,34,0.08); }
+    ol li { margin: 0.8rem 0; line-height: 1.45; }
+
+      .link-wrapper {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .link-area {
+        margin-bottom: 12px;
+      }
+
+      .link-area a {
+        color: black;
+        text-decoration: none;
+        background: rgba(255,255,255,0.85);
+        padding: 12px 30px;
+        border-radius: 8px;
+        font: bold 1.1rem sans-serif;
+        display: inline-block;
+        text-align: center;
+      }
+
+      .link-area a:hover {
+        background: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background-image"></div>
+
+    <h1>Lemons</h1>
+  <ol>
+    <li>Plant at the Right Time: Best in spring after last frost.</li><br>
+    <li>Pick a Sunny Spot: Requires 8+ hrs of direct sunlight.</li><br>
+    <li>Prepare Soil: Well-draining sandy or loamy soil; pH 5.5–6.5.</li><br>
+    <li>Water Regularly: 1–2 inches weekly; keep soil evenly moist.</li><br>
+    <li>Fertilize Often: Every 4–6 weeks with citrus-specific fertilizer.</li><br>
+    <li>Harvest at Peak: Pick when lemons are fully yellow and slightly soft.</li><br>
+  </ol>
+<div><br><br><br></div>
+    <div class="link-wrapper">
+      <div class="link-area"><a href="List.html">List</a></div>
+      <div class="link-area"><a href="index.html">Home</a></div>
+    </div>
+  </body>
+</html>

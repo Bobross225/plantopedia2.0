@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Plantopedia </title>
+  <style>
+  body {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      font-family: "Times New Roman", Times, serif;
+      background: linear-gradient(-45deg, #94ff36, #326a00, #8affc1, #3bff00);
+      background-size: 400% 400%;
+      animation: gradientShift 20s ease infinite;
+    }
+
+    @keyframes gradientShift {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    h1 {
+      font-size: 160px;
+      margin: 40px 0 20px 0;
+      color: #000;
+      text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.4);
+    }
+
+    .column-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 0 5%;
+    }
+
+    .left-column, .right-column {
+      width: 45%;
+      padding: 10px;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      margin-bottom: 30px;
+    }
+
+    .link-area {
+      clear: both;
+      padding: 20px;
+    }
+
+    a {
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    img.fruit {
+      width: 100%;
+      max-height: 400px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Plantopedia</h1>
+
+  <div class="column-container">
+    <div class="left-column">
+      <p>
+        Our website Plantopedia is a site containing a multitude of information on Fruits and Vegetables across the state of Alabama.
+        You can find out how to grow them based on numerous different variables. Just scroll down and click the link below and let the magic of gardening whisk you away!
+      </p>
+      <img class="fruit" src="https://drearth.com/wp-content/uploads/Oranges-iStock-1493917402.jpg" alt="Oranges">
+    </div>
+
+    <div class="right-column">
+      <p>
+        We were very excited to make this database because we were able to use digital resources, technology, and real-world problem-solving skills to create a tool that helps in gardening and greenery success. 
+      </p>
+      <img class="fruit" src="https://assets.idahopreferred.com/uploads/2023/09/21165421/Apples-1-scaled-1.jpeg" alt="Apples">
+    </div>
+  </div>
+
+  <div class="link-area"><a href="About.html">About Us</a></div>
+  <div class="link-area"><a href="List.html">List</a></div>
+  <div class="link area"><a href="Data.html">Explore The Data</a></div><br>
+
+</body>
+</html>

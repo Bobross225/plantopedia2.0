@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Plantopedia</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #ebebeb;
+    }
+
+    /* Header */
+    .top-header {
+      display: flex;
+      width: 100%;
+      height: 130px;
+      position: relative;
+      overflow: visible;
+    }
+
+    .header-left {
+      position: relative;
+      background-color: #1c4b27;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding-left: 30px;
+      padding-right: 30px;
+      flex: 1.5;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+      z-index: 2;
+    }
+
+    /* The green extension behind the nav */
+    .header-left::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -250px; /* Adjust width as needed */
+      width: 250px;
+      height: 100%;
+      background-color: #389650;
+      z-index: -1;
+      border-radius: 0; /* No rounding on extension */
+    }
+
+    .header-left img {
+      width: 30%;
+      height: auto;
+      max-height: 115px;
+      margin-left: 10mm;
+    }
+
+    .header-left h1 {
+      font-size: 30.4px;
+      margin: 0;
+      margin-left: 20mm;
+    }
+
+    .header-right {
+      flex: 3;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      z-index: 3;
+    }
+
+    .nav-link {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 17.6px;
+      color: white;
+      text-decoration: none;
+    }
+
+    .nav1 { background-color: #3f8d4a; }
+    .nav2 { background-color: #4ec46d; }
+    .nav3 { background-color: #66ea84; }
+
+    .nav-link:hover {
+      opacity: 0.9;
+    }
+
+    /* Explore Header */
+    .explore-header {
+      background-color: #3f8d4a;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .explore-header h2 {
+      letter-spacing: 6px;
+      font-weight: 400;
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .explore-header p {
+      font-size: 16px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* White Box Section */
+    .explore-description {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 40px auto;
+    }
+
+    .white-box {
+      background-color: white;
+      width: 800px;
+      height: 525px;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      display: flex;
+      flex-direction: row; /* changed from column to row */
+      justify-content: flex-start;
+      align-items: flex-start;
+      text-align: left; /* better for side-by-side */
+      overflow-y: auto;
+      gap: 30px; /* spacing between image and text */
+    }
+
+    .white-box img {
+      max-width: 40%; /* limit image width */
+      height: auto;
+      border-radius: 4px;
+      margin-bottom: 0; /* remove bottom margin for side by side */
+    }
+
+    .white-box div.text-content {
+      max-width: 55%; /* limit width for text */
+      font-size: 18px;
+      color: #000;
+      line-height: 1.6;
+    }
+
+    .white-box strong {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="top-header">
+    <div class="header-left">
+      <img src="https://codehs.com/uploads/61e732ea9bae127d914287b1e1b24cec" alt="Plant Image" />
+      <h1>Plantopedia</h1>
+    </div>
+    <div class="header-right">
+      <a class="nav-link nav1" href="About.html">About Us</a>
+      <a class="nav-link nav2" href="index.html">Home</a>
+      <a class="nav-link nav3" href="List.html">The Garden</a>
+    </div>
+  </div>
+
+  <!-- Explore Section -->
+  <div class="explore-header">
+    <h2>Explore The Data</h2>
+    <p>The Explore The Data page is your one-stop guide to understanding how to navigate the data under the plants.</p>
+  </div>
+
+  <!-- White Box with Image and Text Side-by-Side -->
+  <div class="explore-description">
+    <div class="white-box">
+      <img src="https://fromthetractorseat.files.wordpress.com/2012/02/alabama-soil-map.gif" alt="Soil Map of Alabama" />
+      <div class="text-content">
+        <p>
+          The first step to finding and understanding the information needed to grow your desired fruits and vegetables.
+        </p>
+        <p>
+          There are six major soil regions within Alabama, each with its own planting needs.<br><br>
+
+          <strong>Limestone Valleys & Uplands:</strong><br>
+          Soils developed from weathered limestone in river valleys (Tennessee, Coosa) and uplands.<br>
+          Typically red clayey with silt‑loam surfaces (e.g. Decatur, Dewey, Bodine, Fullerton series).<br>
+          Drainage is generally good; topography varies from level to rolling.<br><br>
+
+          <strong>Appalachian Plateau:</strong><br>
+          Located in Northeast Alabama.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
